@@ -63,7 +63,7 @@
 
 <script>
     // Load chapter1.html content
-    fetch('chapter1.html')
+    fetch('chapter1.htm')
         .then(response => {
             if (!response.ok) {
                 throw new Error('File not found');
@@ -75,7 +75,7 @@
         })
         .catch(() => {
             document.getElementById('content').innerHTML =
-                '<p style="color:red;">Unable to load chapter1.html</p>';
+                '<p style="color:red;">Unable to load chapter1.htm</p>';
         });
 
     // Submit button function
